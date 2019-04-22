@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Ведите город:"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+        <EditText
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="Будет выводиться информация о дате и времени"/>
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        tools:text="aaa"/>
+    <TextView
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="Будет выводиться информация о погоде:температкра,влажность,давление"/>
+</LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
